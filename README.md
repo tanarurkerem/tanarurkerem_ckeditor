@@ -1,28 +1,31 @@
-h1. CKEditor Drupal Feature
+CKEditor Drupal Feature
+=======================
 
 This is a simple feature wich contains correct CKEditor installation.
 
-h2. HOWTO USE
+HOWTO USE
+---------
 
-h3. Make a new Drupal installation with CKEditor feature:
+### Make a new Drupal installation with CKEditor feature:
 
-* $ drush make https://raw.github.com/tanarurkerem/tanarurkerem_ckeditor/master/tanarurkerem_ckeditor.make [WEBDIR]
-* Install Drupal ($ drush si [YOUR OPTIONS])
-* Enable Features module ($ drush en -y features)
-* Enable Tanarurkerem CKEditor feature at admin/structure/features ($ drush en -y tanarurkerem_ckeditor)
-* Revert Tanarurkerem CKEditor settings ($ drush fr -y tanarurkerem_ckeditor)
+* `drush make https://raw.github.com/tanarurkerem/tanarurkerem_ckeditor/master/tanarurkerem_ckeditor.make [WEBDIR]`
+* Install Drupal (`drush si [YOUR OPTIONS]`)
+* Enable Features module (`drush en -y features`)
+* Enable Tanarurkerem CKEditor feature at admin/structure/features (`drush en -y tanarurkerem_ckeditor`)
+* Revert Tanarurkerem CKEditor settings (`drush fr -y tanarurkerem_ckeditor`)
 
-h3. Install Tanarurkerem CKEditor feature to an existing site
+### Install Tanarurkerem CKEditor feature to an existing site
 
-* $drush make --no-core --tar https://github.com/tanarurkerem/tanarurkerem_ckeditor/raw/master/tanarurkerem_ckeditor.make tanarurkerem_ckeditor
+* `drush make --no-core --tar https://github.com/tanarurkerem/tanarurkerem_ckeditor/raw/master/tanarurkerem_ckeditor.make tanarurkerem_ckeditor`
 * TODO how untar to a webdir simple??
 
-h3. Use it in a .make file
+### Use it in a .make file
 
 * add a following lines to your make file:
 
-  projects[tanarurkerem_ckeditor][type] = module
-  projects[tanarurkerem_ckeditor][subdir] = features
-  projects[tanarurkerem_ckeditor][download][type] = git
-  projects[tanarurkerem_ckeditor][download][url] = git://github.com/tanarurkerem/tanarurkerem_ckeditor.git
-
+```
+projects[tanarurkerem_ckeditor][type] = module
+projects[tanarurkerem_ckeditor][subdir] = features
+projects[tanarurkerem_ckeditor][download][type] = git 
+projects[tanarurkerem_ckeditor][download][url] = git://github.com/tanarurkerem/tanarurkerem_ckeditor.git  
+```
