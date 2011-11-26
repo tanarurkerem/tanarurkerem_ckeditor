@@ -13,5 +13,5 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 projects[tanarurkerem_ckeditor][type] = module
 projects[tanarurkerem_ckeditor][subdir] = features
 projects[tanarurkerem_ckeditor][download][type] = git
-projects[tanarurkerem_ckeditor][download][url] = git@github.com/tanarurkerem/tanarurkerem_ckeditor.git
+projects[tanarurkerem_ckeditor][download][url] = git@github.com:tanarurkerem/tanarurkerem_ckeditor.git
 
