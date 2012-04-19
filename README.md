@@ -17,7 +17,7 @@ HOWTO USE
 ### Install Tanarurkerem CKEditor feature to an existing site
 
 * `drush make --no-core --tar https://github.com/tanarurkerem/tanarurkerem_ckeditor/raw/master/tanarurkerem_ckeditor.make tanarurkerem_ckeditor`
-* TODO how untar to a webdir simple??
+* tar -x -s /tanarurkerem_ckeditor// -C [YOUR DRUPAL WEB DIR] < tanarurkerem_ckeditor.tar.gz 
 
 ### Use it in a .make file
 
