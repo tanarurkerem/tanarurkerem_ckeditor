@@ -18,9 +18,12 @@ HOWTO USE
 
 * `drush make --no-core --tar https://github.com/tanarurkerem/tanarurkerem_ckeditor/raw/master/tanarurkerem_ckeditor.make tanarurkerem_ckeditor`
 * Mac OSX - bsdtar 2.8.3 - libarchive 2.8.3
-** tar -x -s /tanarurkerem_ckeditor// -C [YOUR DRUPAL WEB DIR] < tanarurkerem_ckeditor.tar.gz 
+
+ `tar -x -s /tanarurkerem_ckeditor// -C [YOUR DRUPAL WEB DIR] < tanarurkerem_ckeditor.tar.gz` 
+ 
 * Ubuntu - (GNU tar) 1.25
-** tar -x -z --xform s/tanarurkerem_ckeditor// -C /home/csaki/munka/ujweb/www < ./tanarurkerem_ckeditor.tar.gz
+
+ `tar -x -z --xform s/tanarurkerem_ckeditor// -C [YOUR DRUPAL WEB DIR] < ./tanarurkerem_ckeditor.tar.gz`
 
 ### Use it in a .make file
 
