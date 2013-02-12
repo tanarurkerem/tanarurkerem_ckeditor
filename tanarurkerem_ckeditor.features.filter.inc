@@ -10,7 +10,7 @@
 function tanarurkerem_ckeditor_filter_default_formats() {
   $formats = array();
 
-  // Exported format: CKEditor
+  // Exported format: CKEditor.
   $formats['ckeditor'] = array(
     'format' => 'ckeditor',
     'name' => 'CKEditor',
@@ -22,7 +22,7 @@ function tanarurkerem_ckeditor_filter_default_formats() {
         'weight' => '-10',
         'status' => '1',
         'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <blockquote> <ul> <ol> <li> <h2> <h3> <h4> <h5> <h6> <p> <pre>',
+          'allowed_html' => '<a> <em> <strong> <blockquote> <ul> <ol> <li> <h2> <h3> <h4> <h5> <h6> <p> <pre> <img> <div>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
