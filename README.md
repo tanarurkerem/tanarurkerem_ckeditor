@@ -27,9 +27,15 @@ HOWTO USE
 
 ### Use it in a .make file
 
-* add a following lines to your make file:
+* add the following lines to your make file:
 
 ```
+projects[features][subdir] = "contrib"
+projects[ckeditor][subdir] = "contrib"
+
+libraries[ckeditor][download][type] = "file"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.4.tar.gz"
+
 projects[tanarurkerem_ckeditor][type] = module
 projects[tanarurkerem_ckeditor][subdir] = features
 projects[tanarurkerem_ckeditor][download][type] = git 
