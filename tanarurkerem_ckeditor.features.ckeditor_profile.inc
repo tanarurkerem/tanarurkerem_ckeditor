@@ -12,29 +12,19 @@ function tanarurkerem_ckeditor_ckeditor_profile_defaults() {
     'CKEditor' => array(
       'name' => 'CKEditor',
       'settings' => array(
-        'filters' => array(
-          'filter_htmlcorrector' => 1,
-          'filter_html' => 1,
-        ),
-        'textformat_filters' => 't',
         'ss' => '2',
         'default' => 't',
         'show_toggle' => 'f',
-        'skin' => 'kama',
         'uicolor' => 'default',
-        'uicolor_textarea' => '<p>
-	Click the <strong>UI Color Picker</strong> button to set your color preferences.</p>
-',
         'uicolor_user' => 'default',
         'toolbar' => '[
     [\'Bold\',\'Italic\'],
     [\'NumberedList\',\'BulletedList\',\'Blockquote\'],
-    [\'Format\'],
+    [\'Format\',\'Styles\'],
     [\'Cut\',\'Copy\',\'Paste\',\'PasteText\',\'PasteFromWord\'],
     [\'Undo\',\'Redo\',\'Find\',\'Replace\',\'-\',\'SelectAll\',\'RemoveFormat\'],
-    [\'Link\',\'Unlink\',\'Anchor\', \'Linkit\'],
-]
-    ',
+    [\'Link\',\'Unlink\',\'Anchor\']
+]',
         'expand' => 't',
         'width' => '100%',
         'lang' => 'en',
@@ -70,7 +60,12 @@ function tanarurkerem_ckeditor_ckeditor_profile_defaults() {
         'scayt_autoStartup' => 'f',
         'theme_config_js' => 'f',
         'js_conf' => 'config.entities = false;
-config.entities_latin = false;',
+config.entities_latin = false;
+config.stylesCombo_stylesSet = [
+  { name : \'Img-left\', element : \'img\', attributes : {class: \'img-left\'}},
+  { name : \'Img-right\', element : \'img\', attributes : {class: \'img-right\'}},
+  { name : \'Img-mid\', element : \'img\', attributes : {class: \'img-mid\'}}
+];',
         'loadPlugins' => array(),
       ),
       'input_formats' => array(
