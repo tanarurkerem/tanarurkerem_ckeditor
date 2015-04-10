@@ -10,26 +10,26 @@
 function tanarurkerem_ckeditor_filter_default_formats() {
   $formats = array();
 
-  // Exported format: CKEditor
-  $formats['ckeditor'] = array(
-    'format' => 'ckeditor',
-    'name' => 'CKEditor',
-    'cache' => '1',
-    'status' => '1',
-    'weight' => '0',
+  // Exported format: Tanarurkerem CKEditor.
+  $formats['tanarurkerem_ckeditor'] = array(
+    'format' => 'tanarurkerem_ckeditor',
+    'name' => 'Tanarurkerem CKEditor',
+    'cache' => 1,
+    'status' => 1,
+    'weight' => 0,
     'filters' => array(
       'filter_html' => array(
-        'weight' => '-10',
-        'status' => '1',
+        'weight' => -10,
+        'status' => 1,
         'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <blockquote> <ul> <ol> <li> <h2> <h3> <h4> <h5> <h6> <p> <pre>',
+          'allowed_html' => '<a> <em> <strong> <ul> <ol> <li> <img>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
       ),
       'filter_htmlcorrector' => array(
-        'weight' => '10',
-        'status' => '1',
+        'weight' => 10,
+        'status' => 1,
         'settings' => array(),
       ),
     ),
