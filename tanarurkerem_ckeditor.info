@@ -1,0 +1,12 @@
+name = Tanarurkerem CKEditor
+core = 7.x
+package = Features
+dependencies[] = ckeditor
+dependencies[] = features
+dependencies[] = filter
+dependencies[] = imce
+dependencies[] = imce_crop
+dependencies[] = imce_mkdir
+features[ckeditor_profile][] = Tanarurkerem_CKEditor
+features[features_api][] = api:2
+features[filter][] = tanarurkerem_ckeditor
